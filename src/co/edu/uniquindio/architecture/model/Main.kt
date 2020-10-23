@@ -33,10 +33,12 @@ class Main:Application() {
         println(alu.getDirections())
 
         alu.add("5h", "0h")
-
+        alu.increment("4h")
+        alu.increment("0h")
         println(alu.getDirections())
         println(alu.getFlags())
         println(alu.getCarry())
+
         System.exit(0)
     }
 }
