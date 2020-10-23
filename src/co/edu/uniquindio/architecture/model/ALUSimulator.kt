@@ -106,5 +106,17 @@ class ALUSimulator {
         }
         lastUsed = Pair(direction, result.toByte())
     }
+    fun decrement( direction: String ){
+        var value = directions[direction]
+        var result = value.toString().toInt()-1
+        if(value.toString().toByte()==0.toByte()){
+
+        }
+        lastUsed = Pair(direction, result.toByte())
+    }
+    fun and(direction1: String, direction2: String){
+
+        
+    }
 
 }

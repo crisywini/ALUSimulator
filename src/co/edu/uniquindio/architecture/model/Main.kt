@@ -31,6 +31,7 @@ class Main:Application() {
         println(Integer.toBinaryString(bit.plus(bit2)))
         var alu:ALUSimulator = ALUSimulator()
         println(alu.getDirections())
+        var byte4:Byte = -1
 
         alu.add("5h", "0h")
         alu.increment("4h")
