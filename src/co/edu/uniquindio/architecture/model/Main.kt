@@ -31,9 +31,12 @@ class Main:Application() {
         println(Integer.toBinaryString(bit.plus(bit2)))
         var alu:ALUSimulator = ALUSimulator()
         println(alu.getDirections())
-        alu.add("5h", "1h")
+
+        alu.add("5h", "0h")
+
         println(alu.getDirections())
         println(alu.getFlags())
+        println(alu.getCarry())
         System.exit(0)
     }
 }
