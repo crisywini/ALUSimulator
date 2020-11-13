@@ -6,14 +6,12 @@ import kotlin.random.Random
 
 class ALUSimulator {
 
-    private lateinit var directions:Hashtable<String, Byte>
-    private lateinit var carry:Pair<String, Byte>
-    private lateinit var lastUsed:Pair<String, Byte>
-    private lateinit var flags:Hashtable<String, Boolean>
+    private var directions:Hashtable<String, Byte> = Hashtable()
+    private var carry:Pair<String, Byte>
+    private var lastUsed:Pair<String, Byte>
+    private var flags:Hashtable<String, Boolean> = Hashtable()
 
     init{
-        directions = Hashtable()
-        flags = Hashtable()
         carry = Pair("00",0)
         lastUsed = Pair("01",0)
         //initDirections()
@@ -117,6 +115,13 @@ class ALUSimulator {
     fun and(direction1: String, direction2: String){
 
         
+    }
+    fun or(direction1: String, direction2: String){
+
+    }
+
+    fun not(direction:String){
+
     }
 
 }
