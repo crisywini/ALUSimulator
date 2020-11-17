@@ -201,7 +201,7 @@ class ALUSimulator {
 
         if(directions[direction] != null) {
             val direction1 = directions[direction]
-            val str = direction1.toString()
+            val str = Integer.toBinaryString(direction1.toString().toInt())
             var result = ""
             for (i in str) {
                 if (i == '0') {
@@ -210,7 +210,8 @@ class ALUSimulator {
                     result += "0"
                 }
             }
-            directions[direction] = result.toByte()
+            
+            directions[direction] = result.toLong(2).toByte()
             lastUsed = Pair(direction, directions[direction]!!)
         }else{
             throw DirectionNullException("La dirección: $direction no es válida")
